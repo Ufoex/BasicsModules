@@ -1,0 +1,31 @@
+/* Estilo para hacer que la tarjeta sea compacta */
+.compact {
+    width: 50%; /* O el porcentaje de compactación deseado */
+    transform: translateX(-50%); /* Deslizar a la izquierda */
+    transition: width 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Estilo para las transiciones de las tarjetas */
+.slider-item {
+    transition: width 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.active {
+    transform: scale(1);
+    width: 40vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Clase para la tarjeta inactiva */
+.inactive {
+    width: 2rem;
+    opacity: 0.5;
+    font-size: 0.5rem;
+    pointer-events:none;
+    margin-right: 5%; /* Espacio entre elementos */
+    transition: width 0.3s ease; /* Propiedad a animar y duración */
+}
+
+.inactiveFull{
+    display: none;
+}
