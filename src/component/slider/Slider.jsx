@@ -45,7 +45,7 @@ const Slider = () => {
                         key={item.id}
                         className={`col-4 slider-item ${index === currentIndex ? 'active' : 'inactive'}`}
                     >
-                        <div className={`card mb-3 ${index !== currentIndex ? 'compact' : ''} ${currentIndex <= index ? 'inactiveFull' : ''}`}>
+                        <div className={`card mb-3 ${index !== currentIndex ? 'compact' : ''}`}>
                             <div className="card-body">
                                 <h5 className={`card-title ${index === currentIndex ? '' : 'inactiveFull'}`}>Tabla {item.id}</h5>
                                 <table className="table">
