@@ -140,7 +140,7 @@ var TokuStep, TokuOperationType, TokuEventResult, __extends = this && this.__ext
           case 1:
             return t.trys.push([1, 5, , 6]), [4, fetch("https://pabssandbox.trytoku.com/portal_url", {
               method: "GET",
-              mode: "cors",
+              mode: "no-cors",
               cache: "no-cache",
               headers: __assign({"x-public-key": n}, 0 < (null == (o = this.settings.additionalOrigins) ? void 0 : o.length) ? {"additional-origins": this.settings.additionalOrigins.join(";")} : {})
             })];
